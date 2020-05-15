@@ -20,8 +20,9 @@ function App() {
 
   const createUser=(e)=>{
     e.preventDefault();
-    // if(firstName.value.length<1){
-
+    setFirstName(e.target.value);
+    // if(e.target.value.length<1){
+    //   setFirstName
     // }
     const newUser= {firstName, lastName, email, password, passwordConfirm};
     console.log(newUser);
